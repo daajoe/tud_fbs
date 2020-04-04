@@ -1,0 +1,21 @@
+========================================================================================================================
+Betreff: „Anmeldung einer {{thesis.type}}arbeit im Studiengang {{thesis.studies}}“
+========================================================================================================================
+TO: {{examination_office.email1}}
+CC: {{examination_office.email2}}
+========================================================================================================================
+Mailinhalt:
+========================================================================================================================
+Vollständiger Name (Nachname, Vorname) des Studierenden:                {{student.lastname}}, {{student.givenname}}
+Matrikelnummer:                                                         {{student.matr}}
+Studiengang und Art der Abschlussarbeit (Bachelor, Master, Diplom):     {{thesis.type}}
+Titel der Arbeit:                                                       {{thesis.title}}
+Betreuer (Name, Vorname, E-Mail-Adresse):                               {{reviewer1.lastname}}, {{reviewer1.givenname}}, {{reviewer1.email}}
+Gutachter (Name, Vorname, E-Mail-Adresse):                              {{reviewer2.lastname}}, {{reviewer2.givenname}}, {{reviewer2.email}}
+========================================================================================================================
+Anlagen:
+1) vollständig und korrekt ausgefülltes Formular zur Anmeldung der Abschlussarbeit,
+   welches von beiden Gutachtern digital signiert ist;
+2) [für Studierende der Studiengänge Master bzw. Diplom-Informatik sowie Master CSE] die vom
+    Prüfungsamt bestätigte Zulassung zur Masterarbeit (siehe nächster Punkt)
+    Siehe: https://tu-dresden.de/ing/informatik/studium/pruefungsorganisation/fuer-mitarbeiter-passwortgeschuetzt/covid19-bedingte-festlegungen-und-hinweise-fuer-mitarbeiter#section-4

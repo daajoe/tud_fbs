@@ -1,0 +1,190 @@
+chairs:
+  Prof. Weber:
+    group: Mensch-Computer-Interaktion
+    degree: Dr. rer. nat. habil.
+    givenname: Gerhard
+    lastname:  Weber
+    email: gerhard.weber@​tu-dresden.de
+  #TODO: fix below as done above
+  Prozesskommunikation:
+    name: Dr.-Ing. Wollschlaeger
+    email: martin.wollschlaeger@​tu-dresden.de
+  Technische Informationssysteme:
+    name: Dr.-Ing. Klaus Kabitzsch
+    email: klaus.kabitzsch@​tu-dresden.de
+  Maschinelles Lernen für Computer Vision:
+    name: Dr. Bjoern Andres
+    email: bjoern.andres@tu-dresden.de
+  Computational Logic:
+    name: Dr. Sebastian Rudolph
+    email: sebastian.rudolph@tu-dresden.de
+  Wissensverarbeitung:
+    name: Dr. Steffen Hölldobler
+    email: sh@iccl.tu-dresden.de
+  Wissensschaftliches Rechnen für Systembiologie:
+    name: Dr. Ivo F. Sbalzarini
+    email: sbalzarini@mpi-cbg.de
+  Seniorprofessur für Computational Logic:
+    name: Dr. Horst Reichel
+    email: horst.reichel@tu-dresden.de
+  Computergraphik und Visualisierung:
+    name: Dr. Stefan Gumhold
+    email: stefan.gumhold@​tu-dresden.de
+  Mediengestaltung:
+    name: Dr.-Ing. Rainer Groh
+    email: sandra.grossmann@​tu-dresden.de
+  Multimedia Technologie:
+    name: Dr.-Ing. Raimund Dachselt
+    email: raimund.dachselt@tu-dresden.de
+  Softwaretechnologie:
+    name: Dr. Uwe Aßmann
+    email: softwaretechnologie@tu-dresden.de
+  Didaktik der Informatik:
+    name: Dr. Nadine Bergner
+    email: nadine.bergner@​tu-dresden.de
+  Seniorprofessur für Multimediatechnik:
+    name: Dr.-Ing. Klaus Meißner
+    email: klaus.meissner@tu-dresden.de
+  Betriebssysteme:
+    name: Dr. Michael Roitzsch
+    email: michael.roitzsch@tu-dresden.de
+  Datenbanken:
+    name: Dr.-Ing. Wolfgang Lehner
+    email: wolfgang.lehner@tu-dresden.de
+  Datenschutz und Datensicherheit:
+    name: Dr.-Ing. Stefan Köpsell
+    email: martina.gersonde@​tu-dresden.de
+  Rechnernetze:
+    name: DDr. Alexander Schill
+    email: rechnernetze@​tu-dresden.de
+  Systems Engineering:
+    name: Christof Fetzer, PhD.
+    email: se@​mailbox.tu-dresden.de
+  Compilerbau:
+    name: Dr.-Ing. Jeronimo Castrillon-Mazo
+    email: jeronimo.castrillon@tu-dresden.de
+  Adaptive Dynamische Systeme:
+    name: Dr.-Ing Diana Göhringer
+    email: diana.goehringer@tu-dresden.de
+  Prozessorentwurf:
+    name: Dr. Akash Kumar
+    email: akash.kumar@tu-dresden.de
+  Rechnerarchitektur:
+    name: Dr. Wolfgang E. Nagel
+    email: wolfgang.nagel@​tu-dresden.de
+  VLSI-Entwurfssysteme, Diagnostik und Architektur:
+    name: Dr.-Ing. Rainer G. Spallek
+    email: vlsi-eda@​inf.tu-dresden.de
+  Algebraische und logische Grundlagen der Informatik:
+    name: Dr. Christel Baier
+    email: christel.baier@​tu-dresden.de
+  Automatentheorie:
+    name: Dr.-Ing. Franz Baader
+    email: franz.baader@​tu-dresden.de
+  Grundlagen der Programmierung:
+    name: DDr. Heiko Vogler
+    email: heiko.vogler@tu-dresden.de
+  Wissensbasierte Systeme:
+    name: Markus Krötzsch
+    email: markus.kroetzsch@tu-dresden.de
+degrees:
+  Bachelor Informatik:
+    type: Bachelor
+    studies: Informatik
+    email:
+      - anmeldung-abschlussarbeit-informatik-studiengaenge@tu-dresden.de
+      - theses.inf@tu-dresden.de
+    duration: 11
+    filling:
+      filename: Anmeldung_Bachelorarbeit_neu.pdf
+      values:
+        'Name, Vorname': "{{student.lastname}}, {{student.givenname}}"
+        'geb am': "{{student.born}}"
+        "Studiengang": "{{student.studies}}"
+        'eMail': "{{student.email}}"
+        'Thema (englisch)':
+          "value": "{{thesis.title}}"
+          "offset": (15, 20)
+        'Thema (deutsch)':
+          "value": "{{thesis.title_de}}"
+          "offset": (15, 20)}
+        '-Nummer': "{{student.matr}}"
+        ' Gutachter1':
+          "value": "{{reviewer1.degree}} {{reviewer1.givenname}} {{reviewer1.lastname}}"
+          "abs": (185, 398)
+        ' Prof1':
+          "value": "{{reviewer1.group}}"
+          "abs": (185, 356)}
+        ' Gutachter':
+          "value": "{{reviewer2.degree}} {{reviewer2.givenname}} {{reviewer2.lastname}}"
+          "offset": (10, 56)}
+        ' Prof2':
+          "value": "{{reviewer2.group}}"
+          "abs": (185, 258)}
+        'Prüfungsberechtigung G1':
+          "value": "{{reviewer1.allowance_date}}"
+          "offset": (5, 6)
+        'Prüfungsberechtigung G2':
+          "value": "{{reviewer2.allowance_date}}"
+          "offset": (5, 12)
+        'BeginnTag':
+          "value": "{{thesis.start.daymonth}}"
+          "offset": (15, 18)
+        'BeginnJahr':
+          "value": "{{thesis.start.year}}"
+          "offset": (5, 18)
+        "AbgabeTag":
+          "value": "{{thesis.end.daymonth}}"
+          "offset": (5, 18)
+        "AbgabeJahr":
+          "value": "{{thesis.end.year}}"
+          "offset": (0, 18)
+  #TODO: fix below as done above
+  Master Informatik:
+    type: Master
+    studies: Informatik
+    email:
+      - anmeldung-abschlussarbeit-informatik-studiengaenge@tu-dresden.de
+      - theses.inf@tu-dresden.de
+  Diplom Informatik:
+    type: Diplom
+    studies: Informatik
+    email:
+      - anmeldung-abschlussarbeit-informatik-studiengaenge@tu-dresden.de
+      - theses.inf@tu-dresden.de
+  Bachelor Medieninformatik:
+    type: Bachelor
+    studies: Informatik
+    email:
+      - sandra.grossmann@tu-dresden.de
+      - theses.inf@tu-dresden.de
+  Master Medieninformatik:
+    type: Master
+    studies: Informatik
+    email:
+      - sandra.grossmann@tu-dresden.de
+      - theses.inf@tu-dresden.de
+  Master Computational Science and Engineering (CSE):
+    type: Master
+    studies: CSE
+    email:
+      - ruediger.schwarze@imfd.tu-freiberg.de
+      - theses.inf@tu-dresden.de
+  Master Computational Logic (CL):
+    type: Master
+    studies: CL
+    email:
+      - anmeldung-abschlussarbeit-informatik-studiengaenge@tu-dresden.de
+      - theses.inf@tu-dresden.de
+  Master Distributed Systems Engineering (DSE):
+    type: Master
+    studies: DSE
+    email:
+      - alexander.schill@tu-dresden.de
+      - theses.inf@tu-dresden.de
+  Master Computational Modeling and Simulation (CMS):
+    type: Master
+    studies: CMS
+    email:
+      - stefan.gumhold@tu-dresden.de
+      - theses.inf@tu-dresden.de

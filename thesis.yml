@@ -1,0 +1,29 @@
+student:
+  lastname: IM Glueck
+  givenname: Hans
+  matr: 01854711
+  born: 2010-02-10
+  email: 01854711@student.tu-dresden.de
+thesis:
+  title: YAST (Yet another student thesis)
+  title_de: Never try to mess with me!
+  degree: Bachelor Informatik
+  start: "2011-01-01"
+  english: yes #TODO:
+reviewer1:
+  lastname: Meister
+  givenname: Ober
+  group: mygroup
+  degree: Dr. rer. nat.
+  email: pruefungsamt-informatik@tu-dresden.de
+  allowance_date: 2020-10-20
+reviewer2:
+  lastname: Wisser
+  givenname: Besser
+  group: mygroup
+  degree: Dr.-Ing.
+  email: pruefungsamt-informatik@tu-dresden.de
+  allowance_date: ""
+examination_office:
+  email1: pruefungsamt-informatik@tu-dresden.de
+  email2: pruefungsamt-informatik@tu-dresden.de

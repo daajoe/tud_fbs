@@ -1,0 +1,9 @@
+name: tud_bs_filler
+channels:
+  - defaults
+dependencies:
+  - pyyaml
+  - pypdf2
+  - reportlab
+  pip:
+    - endesive
